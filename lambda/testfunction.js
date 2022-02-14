@@ -1,8 +1,4 @@
-exports.handler = async function(event, context) { 
-   return { 
-       console.log("working fam");
-       statusCode: 200,
-       body: JSON.handlerstringify ({message: "Hello World"}) 
-    };
-}
-
+exports.handler = async (event, context) => {
+    console.log("it working");
+    return { statusCode: 200, body: "We are now split testing!" };
+  };
